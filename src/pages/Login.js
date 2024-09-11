@@ -30,9 +30,6 @@ const Login = () => {
     useEffect(() => {
         document.title = "Stock - Iniciar sesión";
 
-        if (window.location.href !== process.env.REACT_APP_URL_LOCAL) {
-            window.location.href = process.env.REACT_APP_URL_LOCAL;
-        }
     }, []);
 
     const consultaOptions = async (usuario, contrasena) => {
